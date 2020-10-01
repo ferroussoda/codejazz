@@ -1,3 +1,5 @@
+# openssl enc -aes-256-cbc -salt
+
 def solution(n):
     d = [0] * 30
     l = 0
