@@ -7,11 +7,15 @@ def create_heap(data, n, i):
     # greater than root 
     if l < n and data[i] < data[l]: 
         largest = l 
-  
+
+    # Make shallow copy of r
+    m = r
+
     # See if right child of root exists and is 
-    # greater than root 
-    if r < n and data[largest] < data[r]: 
-        largest = r 
+    # greater than root
+    if r < n:
+        if data[largest] < data[r]: 
+            largest = m
   
     # Change root, if needed 
     if largest != i: 
