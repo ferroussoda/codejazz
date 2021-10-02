@@ -8,8 +8,8 @@ def solution(n):
         n //= 2
         l += 1
 
-    print(d, l, "sdsdds")
-    for p in range(1, 1 + l): # L stores strlen,  ut why l+1?
+    print(d, l, "L stores strlen")
+    for p in range(1, l+1): # L stores strlen,  But why l+1?
         ok = True
         for i in range(l - p): # doubt on l-p, should be just l
             if d[l-i] != d[l-i - p]:
@@ -21,4 +21,5 @@ def solution(n):
     return -1
 
 
-print(solution(955))
+import rand
+print(solution(rand()))
