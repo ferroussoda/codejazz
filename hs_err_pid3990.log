@@ -1,0 +1,53 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fbe7d67e9f6, pid=3990, tid=4103
+#
+# JRE version: OpenJDK Runtime Environment (11.0.11+9) (build 11.0.11+9-Ubuntu-0ubuntu2.20.04)
+# Java VM: OpenJDK 64-Bit Server VM (11.0.11+9-Ubuntu-0ubuntu2.20.04, mixed mode, sharing, tiered, compressed oops, g1 gc, linux-amd64)
+# Problematic frame:
+# C  [libc.so.6+0x499f6]
+#
+# No core dump will be written. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugs.launchpad.net/ubuntu/+source/openjdk-lts
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dazureus.install.path=/usr/share/biglybt com.biglybt.ui.Main
+
+Host: Intel(R) Core(TM) i7-10610U CPU @ 1.80GHz, 4 cores, 7G, Ubuntu 20.04.3 LTS
+Time: Fri Nov 19 22:11:04 2021 IST elapsed time: 24862.010444 seconds (0d 6h 54m 22s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007fbe1153a800):  JavaThread "AWT-XAWT" daemon [_thread_in_native, id=4103, stack(0x00007fbdc4660000,0x00007fbdc4761000)]
+
+Stack: [0x00007fbdc4660000,0x00007fbdc4761000],  sp=0x00007fbdc475f7f0,  free space=1021k
+Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libc.so.6+0x499f6]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+J 5106  sun.awt.X11.XlibWrapper.XEventsQueued(JI)I java.desktop@11.0.11 (0 bytes) @ 0x00007fbe645f8b94 [0x00007fbe645f8b40+0x0000000000000054]
+j  sun.awt.X11.XToolkit.run(Z)V+63 java.desktop@11.0.11
+j  sun.awt.X11.XToolkit.run()V+5 java.desktop@11.0.11
+j  java.lang.Thread.run()V+11 java.base@11.0.11
+v  ~StubRoutines::call_stub
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 128 (SI_KERNEL), si_addr: 0x0000000000000000
+
+Register to memory mapping:
+
+RAX=0x00104d7da3cf4d70 is an unknown value
+RBX=0x00007fbe7d820718: <offset 0x00000000001eb718> in /lib/x86_64-linux-gnu/libc.so.6 at 0x00007fbe7d635000
+RCX=0x0000000000000003 is an unknown value
+RDX=0x0000000000000001 is an unknown value
+RSP=0x00007fbdc475f7f0 is pointing into the stack for thread: 0x00007fbe1153a800
+RBP=0x0000000000000001 is an unknown value
+RSI=0x0000000000000001 is an unknown value
+RDI=0x00007fbe7d5c6680: <offset 0x0000000001281680> in /usr/lib/jvm/java-11-openjdk-amd64/lib/server/libjvm.so at 0x00007fbe7c345000
+R8 =
