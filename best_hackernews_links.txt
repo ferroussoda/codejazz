@@ -4,4 +4,5 @@ List of best websites seen on hackernews:
 4x4 ascii fonts
 https://simplifier.neocities.org/4x4.html
 
-
+Pytorch related stackoverflow
+https://you.com/niche/pytorch?q=initialize+weights&fromSearchBar=true
