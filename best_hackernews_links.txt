@@ -6,3 +6,7 @@ https://simplifier.neocities.org/4x4.html
 
 Pytorch related stackoverflow
 https://you.com/niche/pytorch?q=initialize+weights&fromSearchBar=true
+
+
+IBM Power10 Memory inception
+https://www.nextplatform.com/2021/08/13/the-power-of-power10s-memory-inception-clustering/
