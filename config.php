@@ -1,11 +1,11 @@
 <?php
 $CONFIG = array (
-  'instanceid' => 'oc3l3fs9wxkk',
+  'instanceid' => 'dsfsgsgaf',
   'trusted_domains' => 
   array (
-    0 => '172.25.60.168',
+    0 => '135.25.45.32',
   ),
-  'passwordsalt' => 'rL2SGkVGvyieYHooOQPiHiJfboS9OB',
+  'passwordsalt' => 'rL2SGkVGvyieYHooOQPiHiJfboSdsa',
   'secret' => '24PaWhU/X2jPFVX9fl89KzMEdBzoLE766ugVk1WALAaAlVRk',
   'datadirectory' => '/var/www/html/data',
   'overwrite.cli.url' => 'http://192.168.1.5',
